@@ -4,4 +4,3 @@ services:
     env: docker
     plan: free
     buildCommand: "./.render/build.sh"
-    startCommand: "apache2ctl -D FOREGROUND"
