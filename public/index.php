@@ -1,5 +1,5 @@
 <?php
-$url = "https://myapi.infinityfreeapp.com/?i=1";
+$url = "https://myapi.infinityfreeapp.com/?";
 
 $options = [
     "http" => [
