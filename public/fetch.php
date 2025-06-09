@@ -4,7 +4,7 @@ header('Content-Type: application/json');
 $servername = "35.185.144.82";
 $username = "rootroot";
 $password = "e1234567";  // 替換成你的密碼
-$dbname = "npust_data";
+$dbname = "test";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
