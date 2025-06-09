@@ -1,13 +1,15 @@
 <?php
-header('Content-Type: application/json');
+$url = "https://myapi.infinityfreeapp.com/?i=1";
 
-$data = [
-    ["id" => "1", "name" => "10", "age" => "2020"],
-    ["id" => "2", "name" => "20", "age" => "2021"],
-    ["id" => "3", "name" => "30", "age" => "2022"]
+$options = [
+    "http" => [
+        "method" => "GET",
+        "header" => "User-Agent: Mozilla/5.0\r\n"
+    ]
 ];
+$context = stream_context_create($options);
+$response = file_get_contents($url, false, $context);
 
-echo json_encode($data);
+header('Content-Type: application/json');
+echo $response;
 ?>
-
-<?php
