@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$servername = "35.185.144.82";
+$servername = "35.185.144.82:3306";
 $username = "rootroot";
 $password = "e1234567";  // 替換成你的密碼
 $dbname = "test";
